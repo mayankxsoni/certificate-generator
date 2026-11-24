@@ -1,5 +1,5 @@
 {
-  "buildCommand": "curl -sS https://getcomposer.org/installer | php -- --install-dir=/tmp --filename=composer && /tmp/composer install --no-dev --optimize-autoloader && npm install --ignore-scripts && npm run build",
+  "buildCommand": "npm install --ignore-scripts && npm run build",
   "outputDirectory": "public",
   "rewrites": [
     {
