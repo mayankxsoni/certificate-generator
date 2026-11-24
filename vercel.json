@@ -1,0 +1,16 @@
+{
+  "framework": "laravel",
+  "buildCommand": "composer install --no-dev --optimize-autoloader && npm install --ignore-scripts && npm run build",
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.php"
+    }
+  ],
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.4"
+    }
+  }
+}
